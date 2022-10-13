@@ -15,19 +15,68 @@
     <script src="https://unpkg.com/crisp-game-lib@1.1.0/docs/bundle.js"></script>
 
 <script>
-title = "";
+title = "me game";
 
 description = `
+  jump jump
 `;
 
-characters = [];
+characters = [
+  `
+  ll
+ l 
+llll
+l l
+ll l
+  l
+`,
+`
+  ll
+ l
+lll
+l  
+ll
+ll 
+`,
+`
+l   ll
+llllll
+`,
+`
+ll l
+l l
+ll 
+l
+ll l
+  l
+`,
+`
+ll
+l 
+lll 
+l l
+l l
+l  l
+`,
+`
+l
+lll
+l
+`,
+];
 
-options = {};
+options = {
+  viewSize: { x: 200, y: 100 },
+  isPlayingBgm: true,
+  isReplayEnabled: true,
+  theme: "dark",
+  seed: 6,
+};
 
-function update() {
-  if (!ticks) {
-  }
-}
+let mountains;
+let shipY, shipV;
+let offset;
+let mountainAppDist;
 
 addEventListener("load", onLoad);
 </script>
